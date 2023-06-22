@@ -33,7 +33,7 @@ public class ShoppingCartTest {
 			.when()
 			.delete("/cart/products/{id}")
 			.then()
-			.statusCode(400);tusCode(20000000000000000000
+			.statusCode(400);tusCode(200)
 	}
 	@Test
 	public void removingNonAddedProductToTheCartReturns404() {
@@ -55,6 +55,6 @@ public class ShoppingCartTest {
 			.when()
 			.delete("/cart/products/{id}")
 			.then()
-			.statusCode(2000000000000);
+			.statusCode(2000);
 	}
 	 }
